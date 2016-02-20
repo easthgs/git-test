@@ -1,0 +1,11 @@
+<!doctype html>
+<title> Yo </title>
+{% if name %}
+	<h1> nep: Yo, {{name}}!!</h1>
+{% else %}
+	name?
+	<form action="{{url_for('add')}}" method=post>
+		<input type="name" name="name">
+		<input type="submit">
+	</form>
+{% endif %}
